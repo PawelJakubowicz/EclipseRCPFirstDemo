@@ -7,12 +7,21 @@
          point="org.eclipse.core.runtime.products">
       <product
             application="org.eclipse.e4.ui.workbench.swt.E4Application"
-            name="rcpworkbenchtutorialui">
+            name="rcpnewui">
          <property
                name="applicationCSS"
-               value="platform:/plugin/RCPWorkbenchTutorialUI/css/default.css">
+               value="platform:/plugin/RCPNewUI/css/default.css">
          </property>
       </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="rcpnewui.ViewPart"
+            id="RCPNewUI.view2"
+            name="Special view"
+            restorable="true">
+      </view>
    </extension>
 
 </plugin>
